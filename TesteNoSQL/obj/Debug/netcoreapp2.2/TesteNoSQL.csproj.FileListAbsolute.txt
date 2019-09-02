@@ -1,0 +1,14 @@
+C:\Users\Matheus\Desktop\TesteNoSQL\bin\Debug\netcoreapp2.2\TesteNoSQL.deps.json
+C:\Users\Matheus\Desktop\TesteNoSQL\bin\Debug\netcoreapp2.2\TesteNoSQL.runtimeconfig.json
+C:\Users\Matheus\Desktop\TesteNoSQL\bin\Debug\netcoreapp2.2\TesteNoSQL.runtimeconfig.dev.json
+C:\Users\Matheus\Desktop\TesteNoSQL\bin\Debug\netcoreapp2.2\TesteNoSQL.dll
+C:\Users\Matheus\Desktop\TesteNoSQL\bin\Debug\netcoreapp2.2\TesteNoSQL.pdb
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.RazorAssemblyInfo.cache
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.RazorAssemblyInfo.cs
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.RazorTargetAssemblyInfo.cache
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.dll
+C:\Users\Matheus\Desktop\TesteNoSQL\obj\Debug\netcoreapp2.2\TesteNoSQL.pdb
