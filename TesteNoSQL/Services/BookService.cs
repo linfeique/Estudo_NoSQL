@@ -13,7 +13,7 @@ namespace TesteNoSQL.Services
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
 
-            _books = database.GetCollection<booksModel>(settings.BooksCollectionName);
+            _books = database.GetCollection<booksModel>("Books");
         }
 
         public List<booksModel> Get() =>
