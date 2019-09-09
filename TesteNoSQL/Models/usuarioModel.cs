@@ -7,10 +7,10 @@ namespace TesteNoSQL.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public int id { get; set;}
+        public string id { get; set;}
 
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        public string Senha { get; set; }
+        public string senha { get; set; }
     }
 }

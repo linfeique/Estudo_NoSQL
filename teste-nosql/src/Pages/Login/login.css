@@ -13,7 +13,8 @@
 
 .login__ladoEsquerdo{
     width: 78%;
-    background-image: url(../../Assets/images/ladoEsquerdo.jpg);
+    height: 100vh;
+    background-image: url(../../Assets/images/asphalt-cars-drive-2694920.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -21,7 +22,7 @@
 .login__ladoDireito{
     width: 22%;
     height: 100%;
-    background-color: #D3D2D2;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +42,14 @@
 
 .login__container img{
     margin-top: -80px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.login__container a{
+    color: #fb880b;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 .login__formulario{
@@ -55,11 +63,26 @@
 .login__formulario input[type = "password"]{
     width: 270px;
     height: 40px;
-    border: none;
+    border: 2px solid #FB880B;
     border-radius: 5px;
     margin-bottom: 40px;
     padding-left: 5px;
     font-size: 17px;
+    background-color: transparent;
+    color:white;
+    box-shadow: 0px 0px 10px 2px rgba(251,136,11,1);
+}
+
+.login__formulario input[type = "text"]:focus,
+.login__formulario input[type = "password"]:focus{
+    box-shadow: 0px 0px 16px 2px rgba(251,136,11,1);
+    transition: all .3s;
+}
+
+.login__formulario input[type = "text"]:not(:focus),
+.login__formulario input[type = "password"]:not(:focus){
+    box-shadow: 0px 0px 10px 2px rgba(251,136,11,1);
+    transition: all .3s;
 }
 
 .login__formulario button{
@@ -68,4 +91,17 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FB880B;
+}
+
+.login__formulario button:hover{
+    box-shadow: 0px 0px 13px 2px rgba(251,136,11,1);
+    transition: all 0.6s;
+}
+
+.login__formulario button:not(:hover){
+    box-shadow: none;
+    transition: all 0.6s;
 }

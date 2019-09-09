@@ -35,7 +35,7 @@ namespace TesteNoSQL.Controllers
         {
             try
             {
-                usuarioModel usuario1 = _userService.BuscarPorEmailSenha(usuario.Email, usuario.Senha);
+                usuarioModel usuario1 = _userService.BuscarPorEmailSenha(usuario.email, usuario.senha);
 
                 if(usuario1 == null)
                 {

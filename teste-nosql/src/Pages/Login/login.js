@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './login.css';
-import Particles from 'react-particles-js';
 
-import Logo from '../../Assets/images/logo.png';
+import Logo from '../../Assets/images/amazon-logo.png';
+
+import axios from 'axios';
 
 export default class Login extends Component {
 
@@ -15,6 +16,20 @@ export default class Login extends Component {
         }
     }
 
+    efetuarLogin(event){
+        event.preventDefault();
+
+        axios.post('http://localhost:5000/api/login', {
+            email: this.state.email,
+            senha: this.state.senha
+        })
+        .then(data => {
+            localStorage.setItem("usr-livraria", data.data.token);
+            this.props.history.push("/paginainicial");
+        })
+        .catch(erro => console.log("Erro: ", erro))
+    }
+
     atualizaStatus(event){
         this.setState({[event.target.name]: event.target.value});
     }
@@ -22,13 +37,11 @@ export default class Login extends Component {
     render() {
         return (
             <div className="login__body">
-                <div className="login__ladoEsquerdo">
-                    <Particles></Particles>
-                </div>
+                <div className="login__ladoEsquerdo"></div>
                 <div className="login__ladoDireito">
                     <div className="login__container">
                         <img src={Logo} width="200px" height="200px" />
-                        <form className="login__formulario">
+                        <form className="login__formulario" onSubmit={this.efetuarLogin.bind(this)}>
                             <input 
                                 name="email" 
                                 type="text" 
@@ -45,7 +58,7 @@ export default class Login extends Component {
                             />
                             <button>Enviar</button>
                         </form>
-                        <a href="#">njfrn</a>
+                        <a href="#">Esqueceu sua senha?</a>
                     </div>
                 </div>
             </div>

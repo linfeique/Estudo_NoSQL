@@ -20,7 +20,7 @@ namespace TesteNoSQL.Services
 
         public usuarioModel BuscarPorEmailSenha(string email, string senha)
         {
-            usuarioModel usuarioProcurado = _user.Find<usuarioModel>(user => user.Email == email && user.Senha == senha).FirstOrDefault();
+            usuarioModel usuarioProcurado = _user.Find<usuarioModel>(user => user.email == email && user.senha == senha).FirstOrDefault();
 
             if(usuarioProcurado == null)
             {
