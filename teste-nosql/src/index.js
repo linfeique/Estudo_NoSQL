@@ -6,6 +6,7 @@ import {usuarioAutenticado} from './Services/auth';
 
 import Login from './Pages/Login/login';
 import PaginaInicial from './Pages/PaginaPrincipal/paginainicial';
+import CadastroUsuario from './Pages/CadastroUsuario/cadastrousuario';
 
 const Permissao = ({component: Component}) => (
     <Route
@@ -21,6 +22,7 @@ const rotas = (
         <>
             <Switch>
                 <Route path="/" exact component={Login} />
+                <Route path="/cadastrousuario" component={CadastroUsuario} />
                 <Permissao path="/paginainicial" component={PaginaInicial} />
             </Switch>
         </>

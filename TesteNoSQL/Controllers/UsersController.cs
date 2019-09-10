@@ -17,6 +17,20 @@ namespace TesteNoSQL.Controllers
             _userService = userService;
         }
 
+        [HttpPost]
+        public IActionResult CadastrarUsuario(usuarioModel usuario)
+        {
+            try
+            {
+                _userService.CadastrarUsuario(usuario);
+                return Ok();
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
         [HttpGet]
         public IActionResult Listar()
         {
@@ -30,21 +44,13 @@ namespace TesteNoSQL.Controllers
             }
         }
 
-        [HttpPost]
-        public IActionResult BuscarEmailSenha(usuarioModel usuario)
-        {
+        [HttpGet("qtdados")]
+        public IActionResult QtDados(){
             try
             {
-                usuarioModel usuario1 = _userService.BuscarPorEmailSenha(usuario.email, usuario.senha);
-
-                if(usuario1 == null)
-                {
-                    return NotFound("Usuário não encontrado");
-                }
-
-                return Ok(usuario1);
+                return Ok(_userService.BuscarQuantidadeDados());   
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
                 return BadRequest();
             }

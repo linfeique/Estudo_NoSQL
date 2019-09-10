@@ -18,6 +18,11 @@ namespace TesteNoSQL.Services
 
         public List<usuarioModel> Listar() => _user.Find(user => true).ToList();
 
+        public void CadastrarUsuario(usuarioModel usuario)
+        {
+            _user.InsertOne(usuario);
+        }
+
         public usuarioModel BuscarPorEmailSenha(string email, string senha)
         {
             usuarioModel usuarioProcurado = _user.Find<usuarioModel>(user => user.email == email && user.senha == senha).FirstOrDefault();
@@ -29,5 +34,8 @@ namespace TesteNoSQL.Services
 
             return usuarioProcurado;
         }
+
+        public long BuscarQuantidadeDados() => 
+            _user.Find(user => true).CountDocuments();
     }
 }

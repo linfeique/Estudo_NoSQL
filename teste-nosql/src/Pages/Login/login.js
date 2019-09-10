@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './login.css';
-
-import Logo from '../../Assets/images/amazon-logo.png';
-
 import axios from 'axios';
+import {Link} from 'react-router-dom';
+
+import './login.css';
+import Logo from '../../Assets/images/amazon-logo.png';
 
 export default class Login extends Component {
 
@@ -47,7 +47,8 @@ export default class Login extends Component {
                                 type="text" 
                                 placeholder="Digite seu email" 
                                 value={this.state.email} 
-                                onChange={this.atualizaStatus.bind(this)} 
+                                onChange={this.atualizaStatus.bind(this)}
+                                required
                             />
                             <input 
                                 name="senha" 
@@ -55,10 +56,14 @@ export default class Login extends Component {
                                 placeholder="Digite sua senha" 
                                 value={this.state.senha} 
                                 onChange={this.atualizaStatus.bind(this)} 
+                                required
                             />
                             <button>Enviar</button>
                         </form>
-                        <a href="#">Esqueceu sua senha?</a>
+                        <div className="login__links">
+                            <a href="#" className="login__link__primeiro">Esqueceu sua senha?</a>
+                            <Link to="/cadastrousuario" className="login__link__segundo">Não Possui conta?</Link>
+                        </div>
                     </div>
                 </div>
             </div>

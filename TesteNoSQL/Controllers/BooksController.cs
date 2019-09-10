@@ -71,5 +71,17 @@ namespace TesteNoSQL.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("qtdados")]
+        public IActionResult QtDados(){
+            try
+            {
+                return Ok(_bookService.BuscarQuantidadeDados());
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest();
+            }
+        }
     }
 }

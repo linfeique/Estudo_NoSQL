@@ -9,14 +9,20 @@ export default class PaginaPrincipal extends Component {
     return (
         <div className="inicial__body">
             <div className="inicial__ladoEsquerdo">
-                <img src={Logo} width="200px" height="200px"/>
-                <ul>
-                    <li>DashBoard</li>
-                    <li>Todos Livros</li>
-                    <li>Buscar Livros</li>
-                    <li>Contato</li>
-                </ul>
-                <span>Todos os Direitos Reservados</span>
+                <div className="inicial__topo">
+                    <img src={Logo} width="180px" height="180px"/>
+                </div>
+                <div className="inicial__menu">
+                    <ul>
+                        <li>DashBoard</li>
+                        <li>Todos Livros</li>
+                        <li>Buscar Livros</li>
+                        <li>Contato</li>
+                    </ul>  
+                </div>
+                <div className="inicial__copyright">
+                    <span>Todos os Direitos Reservados</span>
+                </div>
             </div>
             <div className="inicial__ladoDireito">
                 <header>

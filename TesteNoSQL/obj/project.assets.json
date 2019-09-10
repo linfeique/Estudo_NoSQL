@@ -13056,11 +13056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\Projetos\\Projeto_NoSQL\\TesteNoSQL\\TesteNoSQL.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\Projeto_NoSQL\\TesteNoSQL\\TesteNoSQL.csproj",
       "projectName": "TesteNoSQL",
-      "projectPath": "C:\\Users\\Matheus\\Desktop\\Projetos\\Projeto_NoSQL\\TesteNoSQL\\TesteNoSQL.csproj",
+      "projectPath": "C:\\Users\\Matheus\\Desktop\\Projeto_NoSQL\\TesteNoSQL\\TesteNoSQL.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\Desktop\\Projetos\\Projeto_NoSQL\\TesteNoSQL\\obj\\",
+      "outputPath": "C:\\Users\\Matheus\\Desktop\\Projeto_NoSQL\\TesteNoSQL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

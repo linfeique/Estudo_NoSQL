@@ -28,6 +28,9 @@ namespace TesteNoSQL.Services
             return book;
         }
 
+        public long BuscarQuantidadeDados() => 
+            _books.Find(book => true).CountDocuments();
+
         public void Update(string id, booksModel bookIn) =>
             _books.ReplaceOne(book => book.Id == id, bookIn);
 
